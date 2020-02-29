@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/tenDip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:gravity="start"
+                android:id="@+id/write_post"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two_hundredDip"
+                android:hint="Write Post Description...."
+                android:padding="@dimen/tenDip"
+                android:textSize="@dimen/fifteenDip"
+                android:singleLine="false"
+                android:background="@drawable/background_rount_thin_line" />
+
+
+
+            <TextView
+                android:drawablePadding="@dimen/tenDip"
+                android:gravity="center_vertical"
+                android:hint="Date Selection"
+                android:layout_margin="@dimen/sixDip"
+                android:layout_below="@id/write_post"
+                android:drawableTint="@color/black"
+                android:id="@+id/date_post"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyDip"/>
+
+            <LinearLayout
+                android:padding="@dimen/tenDip"
+                android:orientation="vertical"
+                android:layout_below="@id/date_post"
+                android:background="@drawable/background_rount_thin_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="@dimen/tenDip"
+                    android:gravity="center_vertical"
+                    android:text="Job Type Selection"
+                    android:drawableTint="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/job_type_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/tenDip"
+        android:layout_marginTop="@dimen/hundredDip"
+        android:layout_gravity="center"
+        style="@style/customButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create JOB" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/play_frame"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:layout_margin="@dimen/fiveDip"
+                app:cardCornerRadius="@dimen/tenDip"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two_hundredDip">
+                <ImageView
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_play_circle_outline"
+                    android:layout_width="@dimen/sixtyDip"
+                    android:layout_height="@dimen/sixtyDip"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/job_title_frame"
+                android:layout_margin="@dimen/fiveDip"
+                android:orientation="vertical"
+                android:layout_below="@id/play_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sixteenDip"
+                    android:text="@string/job_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:singleLine="true"
+                    android:textSize="@dimen/sixteenDip"
+                    android:text="@string/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="@dimen/fiveDip"
+                android:orientation="vertical"
+                android:layout_below="@id/job_title_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sixteenDip"
+                    android:text="@string/job_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:singleLine="true"
+                    android:textSize="@dimen/sixteenDip"
+                    android:text="@string/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/tenDip"
+        android:layout_marginTop="@dimen/hundredDip"
+        android:layout_gravity="center"
+        style="@style/customButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apply_button" />
+
+</RelativeLayout>

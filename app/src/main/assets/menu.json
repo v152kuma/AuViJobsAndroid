@@ -1,0 +1,34 @@
+[
+  {
+    "id":0,
+    "icon_name": "",
+    "name":"Home",
+    "class_name":""
+  },
+  {
+    "id":0,
+    "icon_name": "",
+    "name":"Activity",
+    "class_name":""
+  },
+  {
+    "id":1,
+    "icon_name": "",
+    "name":"Change Password",
+    "class_name":""
+  },
+  {
+    "id":1,
+    "icon_name": "",
+    "name":"Setting",
+    "class_name":""
+  },
+  {
+    "id":8,
+    "icon_name": "",
+    "name":"Logout",
+    "class_name":""
+  }
+]
+
+

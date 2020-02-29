@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!-- values -->
+<resources>
+
+    <!-- Range -Ve -->
+
+    <!--Range Decimal value-->
+
+    <!-- Range 1 -->
+    <dimen name="zeroDip">0dp</dimen>
+    <dimen name="oneDip">1dp</dimen>
+    <dimen name="twoDip">2dp</dimen>
+    <dimen name="fourDip">4dp</dimen>
+
+    <dimen name="fiveDip">5dp</dimen>
+    <dimen name="sixDip">6dp</dimen>
+
+    <!-- Range 10 -->
+    <dimen name="tenDip">10dp</dimen>
+    <dimen name="twelveDip">12dp</dimen>
+    <dimen name="forteenDip">14dp</dimen>
+    <dimen name="fifteenDip">15dp</dimen>
+    <dimen name="sixteenDip">16dp</dimen>
+    <dimen name="eighteenDip">18dp</dimen>
+
+    <!-- Range 20 -->
+    <dimen name="twentyDip">20dp</dimen>
+    <dimen name="twentyFourDip">24dp</dimen>
+    <dimen name="twentyfiveDip">25dp</dimen>
+
+    <!-- Range 30 -->
+    <dimen name="thirtyDip">30dp</dimen>
+    <dimen name="thirtyfiveDip">35dp</dimen>
+
+    <!-- Range 40 -->
+    <dimen name="fortyDip">40dp</dimen>
+
+    <!-- Range 50 -->
+    <dimen name="fiftyDip">50dp</dimen>
+
+    <!-- Range 60 -->
+    <dimen name="sixtyDip">60dp</dimen>
+
+    <!-- Range 70 -->
+
+    <!-- Range 80 -->
+    <dimen name="eightyDip">80dp</dimen>
+
+    <!-- Range 90 -->
+
+    <!-- Range 100 -->
+    <dimen name="hundredDip">100dp</dimen>
+    <dimen name="hundred_fiveDip">105dp</dimen>
+
+    <!-- Range 200 -->
+    <dimen name="two_hundredDip">200dp</dimen>
+    <dimen name="three_hundred_Dip">300dp</dimen>
+
+    <dimen name="forteenSip">14sp</dimen>
+    <dimen name="sixteenSip">16sp</dimen>
+    <dimen name="twentySip">20sp</dimen>
+</resources>

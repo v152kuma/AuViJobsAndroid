@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fifteenDip"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:padding="@dimen/fiveDip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:contentDescription="@string/cancel"
+            android:layout_alignParentEnd="true"
+            app:srcCompat ="@drawable/ic_cancel_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/tenDip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="true"
+            style="@style/customTextView"
+            android:text="@string/alert"
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="@dimen/tenDip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tenDip">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/background_circle_"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_account_circle"
+                android:id="@+id/user_image"
+                android:layout_width="@dimen/sixtyDip"
+                android:layout_height="@dimen/sixtyDip"
+                android:contentDescription="@string/app_name"/>
+
+            <TextView
+                android:drawablePadding="@dimen/tenDip"
+                android:drawableStart="@drawable/ic_user"
+                android:textStyle="bold"
+                android:text="@string/name"
+                android:gravity="start|center_vertical"
+                android:singleLine="false"
+                style="@style/customTextView"
+                android:textSize="@dimen/sixteenSip"
+                android:visibility="visible"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:drawablePadding="@dimen/tenDip"
+                android:drawableStart="@drawable/ic_baseline_email_black"
+                android:layout_marginTop="@dimen/tenDip"
+                android:textStyle="bold"
+                android:text="@string/email_address"
+                android:gravity="start|center_vertical"
+                android:singleLine="false"
+                style="@style/customTextView"
+                android:textSize="@dimen/sixteenSip"
+                android:visibility="visible"
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:maxLength="10"
+                android:drawablePadding="@dimen/tenDip"
+                android:drawableStart="@drawable/ic_baseline_phone_iphone"
+                android:layout_marginTop="@dimen/tenDip"
+                android:textStyle="bold"
+                android:text="@string/phn_nmbr"
+                android:gravity="start|center_vertical"
+                android:singleLine="false"
+                style="@style/customTextView"
+                android:textSize="@dimen/sixteenSip"
+                android:visibility="visible"
+                android:id="@+id/phn_nmbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:autoLink="web"
+                android:drawablePadding="@dimen/tenDip"
+                android:drawableStart="@drawable/ic_link"
+                android:layout_marginTop="@dimen/tenDip"
+                android:textStyle="bold"
+                android:hint="@string/website"
+                android:gravity="start|center_vertical"
+                android:singleLine="false"
+                style="@style/customTextView"
+                android:textSize="@dimen/sixteenSip"
+                android:visibility="gone"
+                android:id="@+id/website_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/tenDip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_hundredDip">
+
+        <RelativeLayout
+            android:layout_width="@dimen/hundred_fiveDip"
+            android:layout_height="@dimen/hundred_fiveDip">
+            <ImageView
+                android:background="@drawable/background_circle_"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_account_circle"
+                android:id="@+id/image"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/hundredDip"
+                android:layout_height="@dimen/hundredDip"
+                android:contentDescription="@string/app_name"/>
+            <ImageView
+                android:id="@+id/select_photo"
+                android:background="@drawable/background_circle_blue"
+                android:padding="@dimen/fiveDip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/ic_photo_camera_black"
+                android:layout_width="@dimen/thirtyfiveDip"
+                android:layout_height="@dimen/thirtyfiveDip"
+                android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/text_input"
+        tools:targetApi="lollipop">
+
+        <EditText
+            android:drawablePadding="@dimen/fiveDip"
+            android:drawableStart="@drawable/ic_user"
+            android:inputType="text"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:hint="@string/name"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/text_input"
+        tools:targetApi="lollipop">
+
+        <EditText
+            android:drawablePadding="@dimen/fiveDip"
+            android:drawableStart="@drawable/ic_baseline_phone_iphone"
+            android:id="@+id/mobile_no"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:hint="@string/mobile_number"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/text_input"
+        tools:targetApi="lollipop">
+
+        <EditText
+            android:drawablePadding="@dimen/fiveDip"
+            android:drawableStart="@drawable/ic_baseline_email_black"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:hint="@string/email_address"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/text_input"
+        tools:targetApi="lollipop">
+        <EditText
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="@dimen/fiveDip"
+            android:id="@+id/dob"
+            android:inputType="date"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:hint="@string/dob"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/text_input"
+        tools:targetApi="lollipop">
+
+        <EditText
+            android:drawableStart="@drawable/ic_sign"
+            android:drawablePadding="@dimen/fiveDip"
+            android:id="@+id/address"
+            android:inputType="text"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:hint="@string/address"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/tenDip"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/tenDip"
+            android:text="@string/gender"
+            android:layout_width="@dimen/sixtyDip"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_weight="1"
+            android:id="@+id/gender_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_weight="1"
+                android:buttonTint="@color/black"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:checked="false"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:gravity="start|center"
+                android:layout_weight="1"
+                android:buttonTint="@color/black"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/female"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

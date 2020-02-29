@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/fortyDip"
+        android:layout_marginRight="@dimen/fortyDip"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/otp_number"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:hint="@string/enter_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_gravity="center"
+            style="@style/customButton"
+            android:id="@+id/token_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twentyDip"
+            android:text="@string/verify"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:clickable="false"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/tenDip"
+                android:enabled="false"
+                android:textColor="@color/light_gray"
+                android:id="@+id/resend"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/resend"
+                android:gravity="start"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/timer"
+                style="@style/customTextView"
+                android:layout_marginTop="@dimen/tenDip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

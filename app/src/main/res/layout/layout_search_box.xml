@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fifteenDip"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:padding="@dimen/fiveDip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">P
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:contentDescription="@string/cancel"
+            android:layout_alignParentEnd="true"
+            app:srcCompat ="@drawable/ic_cancel_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/tenDip"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/customTextView"
+            android:text="@string/search"
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="@dimen/tenDip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tenDip">
+            <EditText
+                android:focusableInTouchMode="true"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email_address"
+                android:gravity="start"
+                android:singleLine="true"
+                android:padding="@dimen/fiveDip"
+                android:background="@drawable/background_border"
+                style="@style/customTextView"
+                android:textSize="@dimen/twentyDip"
+                android:visibility="visible"
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:maxLength="10"
+                android:focusableInTouchMode="true"
+                android:inputType="phone"
+                android:padding="@dimen/fiveDip"
+                android:layout_marginTop="@dimen/tenDip"
+                android:hint="@string/phn_nmbr"
+                android:gravity="start"
+                android:singleLine="true"
+                style="@style/customTextView"
+                android:textSize="@dimen/twentyDip"
+                android:background="@drawable/background_border"
+                android:visibility="visible"
+                android:id="@+id/phn_nmbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/main_layout"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/tenDip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tenDip">
+        <ImageView
+            android:tint="@color/light_gray"
+            android:padding="@dimen/fiveDip"
+            android:background="@drawable/background"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible"
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_search"/>
+    </RelativeLayout>
+
+</RelativeLayout>

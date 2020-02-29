@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">AUVI</string>
+
+    <!-- Strings related to login -->
+
+    <string name="enter_otp">Please Enter OTP</string>
+    <string name="guest">Guest</string>
+    <string name="internet_connection">You are offline.Please Check Your Internet Connection.</string>
+    <string name="forget_pass">Forgot password?</string>
+    <string name="forget_password">Forgot password</string>
+
+    <string name="email_address">Email Address</string>
+    <string name="address">Address</string>
+    <string name="dob">Date of birth</string>
+    <string name="email_id">Email Id</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="verify">Verify</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="name">Name</string>
+    <string name="phn_nmbr">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="alert">info</string>
+    <string name="ok">OK</string>
+    <string name="continue_title">Continue</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="using_link">Using Link</string>
+    <string name="using_otp">Using OTP</string>
+
+    <string name="coming_soon">Coming Soon</string>
+    <string name="change_pass">Change Password</string>
+    <string name="i_accept">I accept the</string>
+    <string name="term_condition"><u>Terms &amp; condition</u></string>
+    <string name="about_us">About Us</string>
+    <string name="accept_term_condition">Please accept the terms &amp; condition to proceed.</string>
+    <string name="do_you_want">Do you really want to delete this agent.</string>
+    <string name="do_you_want_logout">Are you sure you want to logout?</string>
+    <string name="logout">Logout</string>
+    <string name="job_description">Job Description</string>
+    <string name="job_status">Job Status</string>
+    <string name="description">Job Description</string>
+    <string name="post_job">Post Job</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="profile">Profile</string>created
+
+
+    <string name="or_with">or with</string>
+    <string name="skip">SKIP</string>
+    <string name="create_account">Sign Up</string>
+
+
+    //header message
+    <string name="otp_verify">OTP Verification</string>
+
+    //message
+    <string name="without_login">Not allowed without login.Please Login!</string>
+    <string name="logout_success">Logged out Successfully</string>
+
+    //Error Message
+    <string name="error_email_empty">Please enter email address Or Phone Number.</string>
+    <string name="error_valid_phone">Please enter valid phone number</string>
+    <string name="error_valid_phone_email">Please enter valid email address OR Phone Number</string>
+    <string name="error_dob">Please choose date of birth</string>
+    <string name="error_address">Please enter address</string>
+    <string name="error_enter_pass">Please enter Password.</string>
+    <string name="error_enter_confirm_pass">Please enter Confirm Password.</string>
+    <string name="error_unable_to_connect_server">Something went wrong.Please try again later.<!--Sorry! Server is not available right now.Retry after some time.--></string>
+    <string name="error_enter_mail">Please enter email address</string>
+    <string name="error_enter_phone">Please enter phone number</string>
+    <string name="error_enter_valid_mail">Please enter valid email address</string>
+
+    <string name="error_enter_valid_mail_or_phone">Please enter valid email address or phone number</string>
+    <string name="error_enter_name">Please enter name</string>
+    <string name="no_data">No data found.</string>
+
+    <string name="error_pass_match">New Password does not match.</string>
+    <string name="error_pass_alpha">Password should be alphanumeric.</string>
+    <string name="error_new_password">Please enter new password.</string>
+    <string name="password_lenght">Password should have at least 8 character</string>
+    <string name="new_password_lenght">New Password should have at least 8 character</string>
+    <string name="new_password">New Password</string>
+
+    <string name="dialog_forget_password_request">Request</string>
+    <string name="profile_updated_message">Profile Updated Successfully</string>
+
+    <string name="image_not_exist">Image does not exist</string>
+
+    //profile
+    <string name="mobile_number">Mobile Number</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="search">Search</string>
+    <string name="save">Save</string>
+    <string name="my_activity">My Activities</string>
+    <string name="privacy_policy_title">Privacy Policy</string>
+
+
+    //memories
+
+    //map
+
+
+    //profile
+    <string name="submit">Submit</string>
+
+    //snackbar message
+    <string name="download_success">Download Successful</string>
+    ]
+    <string name="resend">Resend OTP</string>
+
+    <string name="downloading_image">Downloading&#8230;</string>
+
+    //App tour
+
+    <string name="left_right">please swipe left for more content.</string>
+
+    <string name="give_a_feedback">Feedback</string>
+    <string name="write_feedback">Write a feedback</string>
+
+    <string name="error_write_feedback">Please write a feedback</string>
+
+    <string name="password_change_success">Password Changed Successfully.</string>
+
+    <string name="time_zero">00:</string>
+    <string name="time_one">01:</string>
+    <string name="website">Website (Optional)</string>
+    <string name="home">Home</string>
+    <string name="become_a_job_seeker">Become A Job Seeker</string>
+    <string name="become_a_partner">Become a partner</string>
+    <string name="become_a_agent">Become A Employer</string>
+    <string name="select_gender">Please Select Gender</string>
+    <string name="job_name">JOB NAME</string>
+    <string name="job_title">Job Title</string>
+    <string name="title">Title Name</string>
+    <string name="apply_button">Apply JOb</string>
+    <string name="activities">Activities</string>
+    <string name="search_job_s">Search Job\'s</string>
+    <string name="home_admin_title">Pending Jobs</string>
+    <string name="jobs">Jobs</string>
+    <string name="select_all">Select All</string>
+    <string name="government_id_number">Government ID Number</string>
+    <string name="date_selection">Date Selection</string>
+
+</resources>

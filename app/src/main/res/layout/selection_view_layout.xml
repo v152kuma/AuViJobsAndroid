@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/fiveDip"
+        android:textSize="@dimen/forteenDip"
+        android:paddingTop="@dimen/fiveDip"
+        android:paddingBottom="@dimen/fiveDip"
+        android:paddingStart="@dimen/tenDip"
+        android:paddingEnd="@dimen/tenDip"
+        android:background="@drawable/filter_back_second_header_drawable"
+        android:id="@+id/selection_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+    <style name="AppThemeBlue" parent="AppTheme">
+
+    </style>
+
+    //Edit Text Style
+    <style name="customEditText" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/edit_text_hint_color</item>
+        <item name="android:textSize">@dimen/sixteenDip</item>
+    </style>
+
+    <style name="customTextView" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/text_view_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sixteenDip</item>
+    </style>
+
+    <style name="customTextViewDynamic" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <!--<item name="android:singleLine">true</item>-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/text_view_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="customTextViewWhite" parent="customTextView">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="customButton" parent="AppTheme">
+        <item name="android:background">@drawable/background_round</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/fiveDip</item>
+        <item name="android:textSize">@dimen/sixteenSip</item>
+    </style>
+
+    <declare-styleable name="CSImageEditView">
+        <attr name="editTextid" format="integer"/>
+        <attr name="imageViewId" format="integer"/>
+        <attr name="customEditTextHint" format="string" />
+        <attr name="customImage" format="integer" />
+    </declare-styleable>
+
+    <style name="DialogBox" parent="AppTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="text_input" parent="AppTheme">
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textSize">@dimen/fifteenDip</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/twelveDip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/tenDip"
+    android:layout_margin="@dimen/fifteenDip">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/tenDip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tenDip">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/text_input"
+            tools:targetApi="lollipop">
+            <EditText
+                android:drawablePadding="@dimen/fiveDip"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ic_baseline_email_black"
+                android:id="@+id/email"
+                android:hint="@string/email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <RadioGroup
+            android:visibility="gone"
+            android:id="@+id/option"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/tenDip"
+            android:layout_marginBottom="@dimen/tenDip"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:checked="true"
+                android:layout_marginEnd="@dimen/twentyDip"
+                android:id="@+id/using_link"
+                android:text="@string/using_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/using_otp"
+                android:text="@string/using_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_centerInParent="true"
+                style="@style/customButton"
+                android:id="@+id/ok_action"
+                android:text="@string/dialog_forget_password_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

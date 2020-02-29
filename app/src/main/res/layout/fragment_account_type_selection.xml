@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/thirtyDip"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/become_job_seeker"
+        style="@style/customButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/become_a_job_seeker" />
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/hundredDip"
+        android:layout_below="@id/become_job_seeker"
+        android:layout_gravity="center"
+        android:id="@+id/become_partner"
+        style="@style/customButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/become_a_partner" />
+
+    <Button
+        android:id="@+id/become_employer"
+        android:layout_marginTop="@dimen/hundredDip"
+        android:layout_below="@id/become_partner"
+        android:layout_gravity="center"
+        style="@style/customButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/become_a_agent" />
+
+</RelativeLayout>

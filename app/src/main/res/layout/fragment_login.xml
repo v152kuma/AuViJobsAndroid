@@ -1,0 +1,197 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/tenDip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two_hundredDip">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/ic_launcher"
+                android:layout_width="@dimen/hundredDip"
+                android:layout_height="@dimen/hundredDip">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/thirtyDip"
+            android:layout_marginRight="@dimen/thirtyDip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:padding="@dimen/fiveDip"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/text_input"
+                    tools:targetApi="lollipop">
+                    <EditText
+                        android:hint="@string/email_address"
+                        android:drawablePadding="@dimen/fiveDip"
+                        android:inputType="textEmailAddress"
+                        android:drawableStart="@drawable/ic_baseline_email_black"
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/text_input"
+                    tools:targetApi="lollipop">
+                    <EditText
+                        android:hint="@string/password"
+                        android:drawablePadding="@dimen/fiveDip"
+                        android:inputType="textPassword"
+                        android:drawableStart="@drawable/ic_baseline_lock"
+                        android:drawableEnd="@drawable/ic_round_visibility"
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:layout_marginTop="@dimen/fifteenDip"
+                    android:layout_gravity="center"
+                    style="@style/customButton"
+                    android:id="@+id/sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/fifteenDip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tenDip">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/createAccount"
+                        style="@style/customTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/create_account" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/forgot"
+                        style="@style/customTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/fiveDip"
+                        android:text="@string/forget_pass" />
+
+                    <RelativeLayout
+                        android:id="@+id/or_with_layout"
+                        android:layout_marginTop="@dimen/fifteenDip"
+                        android:layout_below="@id/forgot"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:background="@color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/oneDip"
+                            android:layout_toStartOf="@id/or_with"/>
+
+                        <TextView
+                            android:paddingLeft="@dimen/sixDip"
+                            android:paddingRight="@dimen/sixDip"
+                            android:id="@+id/or_with"
+                            android:textColor="@color/black"
+                            style="@style/customTextView"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/or_with" />
+
+                        <View
+                            android:background="@color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:layout_toEndOf="@id/or_with"
+                            android:layout_height="@dimen/oneDip"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/twentyDip"
+                    android:layout_marginBottom="@dimen/twentyDip"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:padding="@dimen/tenDip"
+                        android:background="@drawable/background_circle_line_thin"
+                        android:contentDescription="@string/app_name"
+                        android:layout_marginEnd="@dimen/twentyDip"
+                        app:srcCompat="@drawable/ic_facebook_logo"
+                        android:id="@+id/facebook"
+                        android:layout_width="@dimen/fortyDip"
+                        android:layout_height="@dimen/fortyDip"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ImageView
+                        android:padding="@dimen/tenDip"
+                        android:background="@drawable/background_circle_line_thin"
+                        android:contentDescription="@string/app_name"
+                        android:layout_marginStart="@dimen/twentyDip"
+                        app:srcCompat="@drawable/ic_google_plus"
+                        android:id="@+id/goole_btn"
+                        android:layout_width="@dimen/fortyDip"
+                        android:layout_height="@dimen/fortyDip" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/twentyfiveDip"
+                    android:layout_marginBottom="@dimen/tenDip"
+                    android:textColor="@color/black"
+                    style="@style/customTextView"
+                    android:id="@+id/skip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/skip"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

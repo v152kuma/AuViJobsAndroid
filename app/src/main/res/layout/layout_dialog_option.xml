@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hundred_fiveDip"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="@dimen/fifteenDip"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/cam_image"
+        android:contentDescription="@string/app_name"
+        android:layout_margin="@dimen/tenDip"
+        android:layout_width="@dimen/fortyDip"
+        android:layout_height="@dimen/fortyDip"
+        android:tint="@color/black"
+        app:srcCompat="@drawable/ic_photo_camera_black" />
+
+    <ImageView
+        android:layout_toEndOf="@id/cam_image"
+        android:layout_gravity="center"
+        android:id="@+id/gallery_image"
+        android:contentDescription="@string/app_name"
+        android:layout_margin="@dimen/tenDip"
+        android:layout_width="@dimen/fortyDip"
+        android:layout_height="@dimen/fortyDip"
+        android:tint="@color/black"
+        app:srcCompat="@drawable/ic_gallery" />
+
+</RelativeLayout>

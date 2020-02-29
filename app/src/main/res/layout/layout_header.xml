@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header"
+    app:cardElevation="@dimen/fiveDip"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:paddingStart="@dimen/tenDip"
+                android:paddingEnd="@dimen/tenDip"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"
+                android:id="@+id/header_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back"/>
+
+            <ImageView
+                android:paddingStart="@dimen/tenDip"
+                android:paddingEnd="@dimen/tenDip"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"
+                android:id="@+id/header_menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_baseline_menu"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SearchView
+                android:visibility="gone"
+                android:drawablePadding="@dimen/tenDip"
+                android:drawableStart="@drawable/ic_search"
+                android:hint="@string/search_job_s"
+                android:background="@drawable/background_rount_thin_line"
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_toStartOf="@id/end_layout"
+                android:paddingEnd="@dimen/tenDip"
+                android:paddingStart="@dimen/zeroDip"
+                android:gravity="start|center_vertical"
+                android:id="@+id/header_title_text"
+                style="@style/customTextViewWhite"
+                android:layout_width="match_parent"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_height="?android:attr/actionBarSize"
+                android:text="@string/app_name"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:id="@+id/end_layout"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:paddingStart="@dimen/tenDip"
+                    android:paddingEnd="@dimen/tenDip"
+                    android:tint="@color/white"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_search"/>
+
+                <ImageView
+                    android:paddingStart="@dimen/tenDip"
+                    android:paddingEnd="@dimen/tenDip"
+                    android:tint="@color/white"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone"
+                    android:id="@+id/interest_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_like"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
